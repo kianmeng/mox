@@ -18,11 +18,11 @@ jobs:
       matrix:
         include:
           - pair:
-              elixir: "1.11"
-              otp: "21.3"
+              elixir: 1.11.x
+              otp: 21.x
           - pair:
-              elixir: "1.16"
-              otp: "26.2"
+              elixir: 1.17.x
+              otp: 27.x
             lint: lint
             coverage: coverage
     steps:
