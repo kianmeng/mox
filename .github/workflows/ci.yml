@@ -21,13 +21,13 @@ jobs:
               elixir: "1.11"
               otp: "21"
           - pair:
-              elixir: "1.18"
-              otp: "27"
+              elixir: "1.19"
+              otp: "28"
             lint: lint
             coverage: coverage
     steps:
       - name: Check out this repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Erlang and Elixir
         uses: erlef/setup-beam@v1
